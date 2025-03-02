@@ -7,6 +7,7 @@ for( const btn of allBtn){
         const addpoint = document.getElementById("addpoint").innerText;
         const convertedAddpoint = parseInt(addpoint)
         if(convertedTask >0){
+     
 
             const sum = convertedTask-1
             const added = convertedAddpoint + 1
@@ -18,12 +19,13 @@ for( const btn of allBtn){
          
             const complet = event.target.parentNode.parentNode.childNodes[3].innerText
             console.log(complet);
+            const clk = document.getElementById("clock").innerText
 
             const history = document.getElementById("history");
             const addHistory = document.createElement("div")
             addHistory.innerHTML = `
                <div id="clr" class="h-fit w-80 rounded-md p-2 bg-blue-100">
-            You have Complete The Task ${complet} at 12:48:15 PM
+            You have Complete The Task ${complet} at ${clk}
         </div>
             
             
@@ -31,8 +33,17 @@ for( const btn of allBtn){
             `
             history.appendChild(addHistory)
 
+   if(convertedTask >1){
+    window.alert("Board updated Successfully")
+   
 
-
+   }
+   else{
+    window.alert("Board updated Successfully")
+           
+    window.alert("Congrates!!! You have complete all the current task")
+   }
+    
 
 
 const clock = document.getElementById("clock");
@@ -62,12 +73,11 @@ console.log(clock);
 
 
         }
+   
+        
         
 
-   else{
-    window.alert("no more")
  
-   }
 
         
 

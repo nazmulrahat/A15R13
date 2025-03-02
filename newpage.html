@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+   
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="h-full pb-9 bg-blue-100 m-0" >
+<section id="colorButton" class=" px-5  h-full    pt-6" >
+
+    <header>
+        <div class="mb-5">
+            <div class="navbar bg-base-100 rounded-xl p-5">
+                <div class="flex-1 gap-2">
+                    <img class="w-9" src="img/logo.png" alt="">
+                 <h1 class="text-2xl">Dev<samp class="font-bold">Board</samp></h1>
+                </div>
+            <div class="flex gap-3">
+                <button id="back" class="btn bg-blue-700 text-white fonts text-sm">Back To  Desk</button>
+            </div>
+              </div>
+        </div>
+    </header>
+    <main class="min-h-full">
+        <h1 class="text-3xl font-extrabold mb-3 text-center">Blogs</h1>
+       <div  class="flex justify-around flex-col  gap-5 ">
+    
+    <div class="flex flex-col bg-white p-5 w-full  gap-5 my-2 rounded-xl">
+     <h1 class="text-2xl font-bold"> Question-1: What are the different ways to select an element in the DOM?</h1>
+     <div class="border "></div>
+     <h1 class="text-xl font-semibold">There are many   ways to select an element in the DOM .
+       
+        they are :
+        1.By ID , 2.By Class , 3.By Tag , 4.By Name , 5. Query Selector etc.
+
+    </h1>
+        </div>
+    <div class="flex flex-col bg-white p-5 w-full  gap-5 my-2 rounded-xl">
+     <h1 class="text-2xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+     <div class="border "></div>
+     <h1 class="text-xl font-semibold">1. innerHTML ব্যবহার করা হয় যখন HTML কনটেন্ট প্রয়োজন। <br>
+        2. innerText ব্যবহার করা হয়  শুধুমাত্র দৃশ্যমান টেক্সট পেতে। <br>
+       3. textContent ব্যবহার  করা হয়  দ্রুততর ও সম্পূর্ণ টেক্সট পেতে ভালো।
+
+    </h1>
+        </div>
+    <div class="flex flex-col bg-white p-5 w-full  gap-5 my-2 rounded-xl">
+     <h1 class="text-2xl font-bold"> Question-3: What is event delegation in the DOM?</h1>
+     <div class="border "></div>
+     <h1 class="text-xl font-semibold">Event Delegation is a technique where an event listener is added to a parent element, which can manage events for its child elements.
+
+    </h1>
+        </div>
+    <div class="flex flex-col bg-white p-5 w-full  gap-5 my-2 rounded-xl">
+     <h1 class="text-2xl font-bold">  Question-4: What is event bubbling in the DOM?</h1>
+     <div class="border "></div>
+     <h1 class="text-xl font-semibold">Event Bubbling is when an event starts at the target element and bubbles up to its parent elements, up to the root.
+
+    </h1>
+        </div>
+    <div class="flex flex-col bg-white p-5 w-full  gap-5 my-2 rounded-xl">
+     <h1 class="text-2xl font-bold"> Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+     <div class="border "></div>
+     <h1 class="text-xl font-semibold">
+        I can create, add, and remove elements using JavaScript like this : <br>
+
+        1. Create: document.createElement('tagName')<br>
+2. Add: parentElement.appendChild(newElement)<br>
+3. Remove: element.remove() or parent.removeChild(childElement)
+    </h1>
+        </div>
+
+        <!------------ -->
+        <!-- 2 -->
+   
+</section>
+<!-- time -->
+
+<script src="back.js"></script>
+
+
+</body>
+</html>

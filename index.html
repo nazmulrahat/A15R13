@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevBoard</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
    
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -15,9 +16,10 @@
     <header>
         <div class="">
             <div class="navbar bg-base-100 rounded-xl p-5">
-                <div class="flex-1">
+                <div class="flex-1 gap-2">
                     <img class="w-9" src="img/logo.png" alt="">
                  <h1 class="text-2xl">Dev<samp class="font-bold">Board</samp></h1>
+                 
                 </div>
             <div class="flex gap-3">
                 <div class="flex bg-blue-100  p-2 rounded-3xl gap-3 justify-center items-center">
@@ -45,15 +47,15 @@
                 </div>
               <div>
                  <p>Task Assigned </p>
-                 <h1 id="task" class="text-3xl font-extrabold">05</h1>
+                 <h1 id="task" class="text-3xl font-extrabold">06</h1>
                  
               </div>
          
              </div>
-             <div class="w-6/12 cursor-pointer flex justify-center pl-10 gap-2 bg-gradient-to-r from-blue-600 to-blue-300 p-5 rounded-xl">
+             <div id="newpage" class="w-6/12 cursor-pointer flex justify-center pl-10 gap-2 bg-gradient-to-r from-blue-600 to-blue-300 p-5 rounded-xl">
                  <div class="w-15 flex items-center gap-2">
                      <img src="img/board.png" alt="">
-                     <h1 class="text-white text-xl mr-3">Discover Something <br> New Today!</h1>
+                     <h1 class="text-white text-xl mr-3">Discover Something  New Today!</h1>
                  </div>
          
              </div>
@@ -196,7 +198,7 @@
             <h1>Activity Log</h1>
        </div>
        <div>
-           <button onclick="clear(clr)" class="btn bg-blue-700 text-white">Clear History</button>
+           <button id="clr" class="btn bg-blue-700 text-white">Clear History</button>
        </div>
        </div>
     <!-- history -->
@@ -218,10 +220,12 @@
         </div>
     </main>
     <footer>
-    
+        <div class="hidden" id="clock">8:10:45</div>
     </footer>
 </section>
 <!-- time -->
+
+
 
 
 
@@ -231,5 +235,8 @@
     <script src="theme.js"></script>
     <script src="date.js"></script>
     <script src="clearHistory.js"></script>
+    <script src="newpage.js"></script>
+    <script src="clock.js"></script>
+
 </body>
 </html>
